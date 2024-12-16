@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+#home {
+  padding: 100px;
+}
+
+#home h1 {
+  font-family: 'Playfair Display', serif; /* Elegant font */
+  font-size: 3rem; /* Adjust as needed */
+  margin: 0;
+}
+
+/* Text Font (Paragraph) */
+#home p {
+  font-family: 'Lora', serif; /* Classic font for paragraphs */
+  font-size: 1.2rem; /* Adjust size as needed */
+  margin-top: 10px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 0; /* No gap for seamless alignment */
+  margin-top: 20px; /* Spacing below the text */
+}
+
+/* Input bar styling */
+.input-bar {
+  width: 300px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  border: 0px solid #ccc; /* Light gray border */
+  border-radius: 20px 0 0 20px; /* Rounded left side only */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+  padding: 0 15px; /* Padding inside the input */
+  font-size: 1rem; /* Adjust font size */
+  font-family: 'Lora', serif; /* Match font with the text */
+  outline: none; /* Remove default blue outline */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Button styling */
+.enter-button {
+  height: 40px; /* Match the input height */
+  border: 1px solid #ccc; /* Light gray border */
+  background-color: #f5deb3; /* Deep burgundy */
+  color: #4c2a4f; /* Light brown text */
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0 20px; /* Adjust padding for button size */
+  border-radius: 0 20px 20px 0; /* Rounded right side only */
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Same shadow as input */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Button hover effect */
+.enter-button:hover {
+  background-color: #4c2a4f; /* Lighter parchment */
+  color: #f2e6d8; /* Deep burgundy text */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input bar hover and focus effects */
+.input-bar:focus {
+  border-color: #4c2a4f; /* Deep burgundy border on focus */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow */
+}
+
+#minigame h1 {
+  font-family: 'Playfair Display', serif; /* Elegant font */
+  font-size: 3rem; /* Adjust as needed */
+  margin: 0;
+}
+
+#minigame p {
+  font-family: 'Lora', serif; /* Classic font for paragraphs */
+  font-size: 1.2rem; /* Adjust size as needed */
+  margin-top: 10px;
+}
+
+.navigation-button {
+  padding: 12px 24px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #d9534f; /* Dark burgundy */
+  color: #fff; /* White text */
+  font-size: 16px; /* Larger text for readability */
+  font-weight: bold; /* Bold text for emphasis */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: all 0.3s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+}
+
+.navigation-button:disabled {
+  background-color: #a9a9a9; /* Gray for disabled buttons */
+  cursor: not-allowed; /* Show not-allowed cursor */
+  box-shadow: none; /* Remove shadow for disabled buttons */
+}
+
+.navigation-button:hover:not(:disabled) {
+  background-color: #d9534f; /* Slightly darker shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slight enlargement for hover effect */
+}
+
+.riddle-input-bar {
+  width: 100%; /* Full width relative to the container */
+  padding: 10px; /* Inner padding for better spacing */
+  margin-bottom: 10px; /* Space below the input bar */
+  border-radius: 20px; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 1rem; /* Adjust font size */
+  font-family: 'Lora', serif; /* Match font with the text */
+  color: #4c2a4f; /* Text color matching the theme */
+  background-color: #f9f7f1; /* Light background for contrast */
+  outline: none; /* Remove default browser outline */
+  transition: all 0.3s ease; /* Smooth transitions for hover and focus */
+}
+
+.riddle-input-bar:focus {
+  border-color: #4c2a4f; /* Highlight border on focus */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on focus */
+}
+
+.riddle-input-bar::placeholder {
+  color: #a9a9a9; /* Subtle placeholder text color */
+}
+
+.envelope {
+  width: 250px; /* Set the width of the envelope */
+  height: 300px; /* Set the height of the envelope */
+  overflow: visible; /* Ensure the image stays within bounds */
+  position: relative; /* Allows hover effects */
+}
+
+.envelope-image {
+  width: 100%; /* Ensure the image fits the container */
+  height: 100%; /* Ensure the image fits the container */
+  object-fit: contain; /* Maintain aspect ratio of the image */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+.envelope:hover .envelope-image {
+  content: url('../public/Envelope_Open.png'); /* Swap the image source */
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+  opacity: 1; /* Ensure the image is fully visible */
+}
+
+
+.riddle-popup {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.submit-button {
+  padding: 15px 25px;
+  border-radius: 8px;
+  background-color: #f5deb3; /* Initial button color */
+  color: #4c2a4f; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+  background-color: #f5deb3; /* Slightly darker background on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.submit-button:active {
+  transform: scale(0.95); /* Shrink slightly when clicked */
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.highlight-button {
+  display: inline-block;
+  color: #ffe4b5; /* Highlight color for the text */
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  padding: 0 5px; /* Add padding for hover effect */
+}
+
+.highlight-button:hover {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  background-color: #4c2a4f; /* Deep burgundy background */
+  color: #fff; /* Change text to white */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.combination-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: #f5deb3;
+  color: #4c2a4f;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.combination-button:disabled {
+  background-color: #a9a9a9;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.combination-button:hover:not(:disabled) {
+  background-color: #f5deb3; /* Darker shade for hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

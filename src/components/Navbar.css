@@ -1,0 +1,90 @@
+/* Navbar.css */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #4c2a4f; /* Deep burgundy color */
+    color: #f2e6d8; /* Muted parchment color for text */
+    padding: 15px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Garamond', serif; /* Classic font style */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes titleDropIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d4af37; /* Muted gold */
+    opacity: 0;
+    animation: titleDropIn 0.8s ease forwards;
+    animation-delay: 0.2s; /* Starts slightly before or after the nav-links */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    left: 50%; /* Horizontal center of the navbar */
+    transform: translateX(-50%); /* Adjust for true centering */
+}
+
+@keyframes dropIn {
+    from {
+        transform: translateY(-50px); /* Start above the navbar */
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        transform: translateY(0); /* Move to the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+
+.nav-links li {
+    display: inline;
+    opacity: 0; /* Initially hidden */
+    animation: dropIn 0.5s ease forwards;
+}
+
+.nav-links li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.nav-links li:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.nav-links a {
+    color: #d4af37; /* Muted gold color */
+    font-weight: bold;
+    font-family: 'Garamond', serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 5px 10px; /* Add padding for better spacing */
+    border-radius: 5px; /* Smooth edges */
+}
+
+.nav-links a:hover {
+    background-color: #f2e6d8; /* Lighter parchment background */
+    color: #4c2a4f; /* Deep burgundy text color */
+}
