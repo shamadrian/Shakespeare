@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shakespeare/static/css/main.00762bb4.css",
+    "main.js": "/shakespeare/static/js/main.7693dfaf.js",
+    "static/js/453.d68e54a0.chunk.js": "/shakespeare/static/js/453.d68e54a0.chunk.js",
+    "static/media/Envelope_Open.png": "/shakespeare/static/media/Envelope_Open.aa7ed575a01b06143849.png",
+    "index.html": "/shakespeare/index.html",
+    "main.00762bb4.css.map": "/shakespeare/static/css/main.00762bb4.css.map",
+    "main.7693dfaf.js.map": "/shakespeare/static/js/main.7693dfaf.js.map",
+    "453.d68e54a0.chunk.js.map": "/shakespeare/static/js/453.d68e54a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00762bb4.css",
+    "static/js/main.7693dfaf.js"
+  ]
+}
