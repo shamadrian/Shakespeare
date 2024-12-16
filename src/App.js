@@ -4,9 +4,16 @@ import Banner from './components/Banner';
 import Confetti from 'react-confetti';
 import './App.css';
 
+import Treasure from './Treasure.webp';
+import EnvelopeClose from './Envelope_Close.png';
+import Applause from './Applause_Sound_Effect.m4a';
+import RoughSong from './Mine_all_mine_clip.m4a';
+import TimeSong from './Used_to_be_young_clip.m4a';
+import DateSong from './Treasure_clip.m4a';
+
 const App = () => {
     const [showConfetti, setShowConfetti] = useState(false);
-    const [applauseAudio] = useState(new Audio('/Applause_Sound_Effect.m4a'));
+    const [applauseAudio] = useState(new Audio(Applause));
 
     // Minigame states
     const [currentPage, setCurrentPage] = useState(1); // Start on the 2nd page
@@ -78,9 +85,9 @@ const App = () => {
 
     const handleWordAudio = (word) => {
         const audioFiles = {
-            Rough: '/Mine_all_mine_clip.m4a',
-            time: '/Used_to_be_young_clip.m4a',
-            'date:': '/Treasure_clip.m4a', // Updated 'date' to 'date:'
+            Rough: RoughSong,
+            time: TimeSong,
+            'date:': DateSong, // Updated 'date' to 'date:'
         };
     
         const audioSrc = audioFiles[word];
@@ -225,7 +232,7 @@ const App = () => {
                                   onClick={() => handleEnvelopeClick(index)} // Pass the index to the click handler
                               >
                                   <img
-                                      src="/Envelope_Close.png"
+                                      src={EnvelopeClose}
                                       alt="Envelope Close"
                                       className="envelope-image"
                                   />
@@ -582,7 +589,7 @@ const App = () => {
                 But which one? Time is running out, and the Earl needs your help to uncover the truth and claim his rightful legacy!
                 </p>
                 <img
-                    src="/Treasure.webp"
+                    src={Treasure}
                     alt="Treasure Chest"
                     style={{
                         marginTop: '20px',

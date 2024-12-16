@@ -1,7 +1,7 @@
 {
   "name": "shakespeare-website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://shamadrian.github.io/Shakespeare/",
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.6.0",
